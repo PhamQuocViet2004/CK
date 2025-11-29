@@ -1,0 +1,18 @@
+﻿@model LAB2.Models.DangKyThanhVien
+
+@{
+    ViewBag.Title = "Thông tin thành viên";
+}
+
+<h2>Thông tin thành viên đã đăng ký</h2>
+
+<ul>
+    <li><b>Tên đơn vị:</b> @Model.TenDonVi</li>
+    <li><b>Loại hình DN:</b> @Model.LoaiHinhDoanhNghiep</li>
+    <li><b>Số lượng NV:</b> @Model.SoLuongNhanVien</li>
+    <li><b>Người liên hệ:</b> @Model.NguoiLienHe</li>
+    <li><b>Điện thoại:</b> @Model.DienThoai</li>
+    <li><b>Email:</b> @Model.Email</li>
+    <li><b>Tên đăng nhập:</b> @Model.TenDangNhap</li>
+    <li><b>Nhận thư điện tử:</b> @(Model.NhanThuDienTu ? "Có" : "Không")</li>
+</ul>

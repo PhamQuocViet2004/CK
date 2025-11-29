@@ -1,0 +1,86 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Đăng nhập hệ thống";
+}
+
+<style>
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Màu nền Gradient đẹp */
+        height: 100vh;
+    }
+
+    .card-login {
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Đổ bóng */
+        border: none;
+    }
+
+    .btn-custom {
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        border: none;
+        color: white;
+        transition: transform 0.2s;
+    }
+
+        .btn-custom:hover {
+            transform: scale(1.05); /* Hiệu ứng phóng to khi di chuột */
+            color: white;
+        }
+</style>
+
+<div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-5">
+            <div class="card card-login p-4 bg-white">
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold text-primary">CHÀO MỪNG TRỞ LẠI</h2>
+                    <p class="text-muted">Đăng nhập để tìm kiếm cơ hội mới</p>
+                </div>
+
+                <form id="account" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username" placeholder="name@example.com"
+                               data-bs-toggle="tooltip" data-bs-placement="right" title="Nhập email bạn đã đăng ký" />
+                        <label asp-for="Input.Email">Email</label>
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input asp-for="Input.Password" class="form-control" autocomplete="current-password" placeholder="Password"
+                               data-bs-toggle="tooltip" data-bs-placement="right" title="Mật khẩu bảo mật của bạn" />
+                        <label asp-for="Input.Password">Mật khẩu</label>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="checkbox mb-3">
+                        <label asp-for="Input.RememberMe" class="form-label">
+                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                            Ghi nhớ mật khẩu
+                        </label>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button id="login-submit" type="submit" class="btn btn-custom btn-lg py-3">ĐĂNG NHẬP NGAY</button>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <p>Chưa có tài khoản? <a asp-page="./Register" class="text-primary fw-bold">Đăng ký ngay</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+}

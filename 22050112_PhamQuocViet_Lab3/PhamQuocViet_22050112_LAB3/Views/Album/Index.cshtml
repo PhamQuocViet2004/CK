@@ -1,0 +1,38 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "Quản lý album ảnh";
+}
+
+<h2>Quản lý ảnh slide show</h2>
+
+<div style="display:flex; flex-wrap:wrap; gap:15px;">
+    @foreach (var img in Model)
+    {
+        <div style="text-align:center; border:1px solid #ccc; padding:5px;">
+            <img src="@Url.Content("~/Content/Images/" + img)" width="150" height="100" style="object-fit:cover;" />
+            <br />
+            <a href="@Url.Action("Delete", "Album", new { fileName = img })" onclick="return confirm('Bạn có chắc chắn muốn xóa ảnh này?')">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" width="20" />
+            </a>
+        </div>
+    }
+</div>
+
+<hr />
+
+<h3>Upload ảnh mới</h3>
+@using (Html.BeginForm("Upload", "Album", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file" />
+    <input type="submit" value="Tải lên" class="btn btn-primary" />
+}
+
+<hr />
+
+<!-- 🔹 Thêm phần khuyến cáo -->
+<div style="margin-top:20px; padding:10px; border:1px dashed #ff9900; background:#fffbe6; color:#cc6600;">
+    <strong>Khuyến cáo:</strong>
+    Nên chọn kích thước ảnh <b>990x320</b> để hiển thị đẹp nhất.
+    Số lượng ảnh tối đa là <b>15</b>.
+</div>

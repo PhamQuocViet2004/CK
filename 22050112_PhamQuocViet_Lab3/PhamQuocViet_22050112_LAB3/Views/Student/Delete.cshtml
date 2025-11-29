@@ -1,0 +1,38 @@
+﻿@model YourNamespace.Models.Student
+@{
+    ViewBag.Title = "Xóa học viên";
+}
+
+<h2>Xác nhận xóa học viên</h2>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>Mã học viên</dt>
+        <dd>@Model.StudentId</dd>
+        <dt>Họ và tên</dt>
+        <dd>@Model.FullName</dd>
+        <dt>Giới tính</dt>
+        <dd>@Model.Gender</dd>
+        <dt>Ngày sinh</dt>
+        <dd>@(Model.DateOfBirth.HasValue ? Model.DateOfBirth.Value.ToString("dd/MM/yyyy") : "")</dd>
+        <dt>Học phí</dt>
+        <dd>@Model.TuitionFee</dd>
+        <dt>Ảnh</dt>
+        <dd>
+            @if (!string.IsNullOrEmpty(Model.ImageFileName))
+            {
+                <img src="@Url.Content("~/Content/StudentImages/" + Model.ImageFileName)" style="width:120px;height:90px;" />
+            }
+        </dd>
+        <dt>Ghi chú</dt>
+        <dd>@Model.Notes</dd>
+    </dl>
+</div>
+
+@using (Html.BeginForm("Delete", "Student", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.StudentId)
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    @Html.ActionLink("Quay lại", "Index", null, new { @class = "btn btn-default" })
+}

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<CK.Models.JobApplication>
+
+@{
+    ViewData["Title"] = "Quản lý hồ sơ ứng viên";
+}
+
+<h1>Danh sách hồ sơ đã nộp</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Công việc ứng tuyển</th>
+            <th>Email ứng viên</th>
+            <th>CV đính kèm</th>
+            <th>Trạng thái</th>
+            <th>Ngày nộp</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Job?.Title</td>
+                <td>@item.UserId</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.CVPatch))
+                    {
+                        <a href="~/cvs/@item.CVPatch" target="_blank" class="btn btn-sm btn-outline-primary">
+                            📥 Tải CV
+                        </a>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Không có file</span>
+                    }
+                </td>
+
+                <td>
+                    @if (item.Status == "Pending")
+                    {
+                        <span class="badge bg-warning text-dark">Chờ duyệt</span>
+                    }
+                    else if (item.Status == "Approved")
+                    {
+
+                        <span class="badge bg-success">Đã duyệt</span>
+                    }
+                    else
+                    {
+
+                        <span class="badge bg-danger">Từ chối</span>
+                    }
+                </td>
+
+                <td>@item.AppliedDate.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Duyệt hồ sơ</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

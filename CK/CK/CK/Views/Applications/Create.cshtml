@@ -1,0 +1,75 @@
+﻿@model CK.Models.JobApplication
+
+@{
+    ViewData["Title"] = "Tạo hồ sơ ứng viên mới";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-success">
+                <div class="card-header bg-success text-white">
+                    <h3 class="mb-0 fw-bold">➕ Tạo hồ sơ ứng viên mới</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="JobId" class="control-label fw-bold">Vị trí ứng tuyển</label>
+                            <select asp-for="JobId" class="form-control" asp-items="ViewBag.JobId">
+                                <option value="">-- Chọn công việc --</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="UserId" class="control-label fw-bold">ID Tài khoản / Email ứng viên</label>
+                            <input asp-for="UserId" class="form-control" placeholder="Nhập ID hoặc Email của ứng viên..." />
+                            <span asp-validation-for="UserId" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold">Tải lên CV (PDF/Word)</label>
+                            <input type="file" name="cvFile" class="form-control" accept=".pdf,.doc,.docx" />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="CoverLetter" class="control-label fw-bold">Thư giới thiệu</label>
+                            <textarea asp-for="CoverLetter" class="form-control" rows="4" placeholder="Nhập nội dung thư giới thiệu..."></textarea>
+                            <span asp-validation-for="CoverLetter" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Status" class="control-label fw-bold">Trạng thái hồ sơ</label>
+                            <select asp-for="Status" class="form-select">
+                                <option value="Pending">⏳ Pending (Chờ xử lý)</option>
+                                <option value="Approved">✅ Approved (Đã duyệt)</option>
+                                <option value="Rejected">❌ Rejected (Từ chối)</option>
+                            </select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold text-muted">Ngày tạo hồ sơ</label>
+                            <input type="text" class="form-control bg-light" value="@DateTime.Now.ToString("dd/MM/yyyy HH:mm")" readonly />
+                            <input type="hidden" asp-for="AppliedDate" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss")" />
+                        </div>
+
+                        <hr />
+
+                        <div class="form-group d-flex justify-content-end gap-2">
+                            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                            <input type="submit" value="💾 Tạo hồ sơ" class="btn btn-success fw-bold px-4" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

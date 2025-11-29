@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Send email with attachment";
+}
+
+<h2>Send email with attachment</h2>
+
+@using (Html.BeginForm("Index", "Mail", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.Label("From:", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="email" name="from" class="form-control" required />
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("To:", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="email" name="to" class="form-control" required />
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Subject:", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="text" name="subject" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Attachment:", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <input type="file" name="attachment" class="form-control" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Notes:", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <textarea name="notes" class="form-control" rows="4"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Send" class="btn btn-primary" />
+        </div>
+    </div>
+}
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-info">@ViewBag.Message</div>
+}

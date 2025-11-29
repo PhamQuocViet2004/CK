@@ -1,0 +1,55 @@
+﻿@model IEnumerable<CK.Models.Job>
+
+@{
+    ViewData["Title"] = "Danh sách việc làm";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Cổng thông tin Tuyển dụng</h1>
+
+    <div class="row mb-3">
+        <div class="col-md-8 mx-auto">
+            <form asp-controller="Jobs" asp-action="Index" method="get">
+                <div class="input-group">
+                    <input type="text" name="searchString" class="form-control" placeholder="Nhập tên công việc bạn muốn tìm..." />
+                    <button class="btn btn-primary" type="submit">Tìm kiếm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p>
+        <a asp-action="Create" class="btn btn-success">+ Đăng tin tuyển dụng mới</a>
+    </p>
+
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Công việc</th>
+                <th>Mức lương</th>
+                <th>Địa điểm</th>
+                <th>Ngày đăng</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <strong>@item.Title</strong>
+                    </td>
+                    <td class="text-success">@item.Salary.ToString("N0") VND</td>
+                    <td>@item.Location</td>
+                    <td>@item.CreatedDate.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Xem chi tiết & Nộp đơn</a>
+
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Sửa</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

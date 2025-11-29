@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Khu vực người dùng</title>
+    <link rel="stylesheet" href="~/Content/Site.css" />
+</head>
+<body>
+    <header>
+        <h1>Khu vực Khách hàng</h1>
+        <nav>
+            @Html.ActionLink("Trang Chủ", "Index", "Home") |
+            @Html.ActionLink("Sản phẩm", "ShowProduct", "Product") |
+            @Html.ActionLink("Thông tin tài khoản", "Profile", "Account") |
+            @Html.ActionLink("Đăng Xuất", "Logout", "Account")
+        </nav>
+    </header>
+
+    <section>
+        @RenderBody()
+    </section>
+
+    <footer>
+        <p>Khu vực dành cho khách hàng đã đăng nhập</p>
+    </footer>
+</body>
+</html>
+@{
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";   
+}

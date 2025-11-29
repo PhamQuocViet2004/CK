@@ -1,0 +1,23 @@
+﻿@model Lab4.Models.Member2
+@{
+    ViewBag.Title = "Thông tin chi tiết đăng ký";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-success text-center">THÔNG TIN ĐĂNG KÝ THÀNH VIÊN</h2>
+
+<table class="table table-striped table-bordered" style="width:600px">
+    <tr><th>Tên đơn vị tuyển</th><td>@Model.CompanyName</td></tr>
+    <tr><th>Loại hình doanh nghiệp</th><td>@Model.CompanyType</td></tr>
+    <tr><th>Số lượng nhân viên</th><td>@Model.EmployeeCount</td></tr>
+    <tr><th>Địa chỉ</th><td>@Model.Address</td></tr>
+    <tr><th>Người liên hệ</th><td>@Model.ContactPerson</td></tr>
+    <tr><th>Số điện thoại</th><td>@Model.Phone</td></tr>
+    <tr><th>Fax</th><td>@Model.Fax</td></tr>
+    <tr><th>Email</th><td>@Model.Email</td></tr>
+    <tr><th>Website</th><td>@Model.Website</td></tr>
+    <tr><th>Tên đăng nhập</th><td>@Model.Username</td></tr>
+    <tr><th>Nhận E-mail</th><td>@(Model.ReceiveEmail ? "Có" : "Không")</td></tr>
+</table>
+
+<a href="@Url.Action("Register", "Member2")" class="btn btn-info">Quay lại form đăng ký</a>

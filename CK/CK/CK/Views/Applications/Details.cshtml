@@ -1,0 +1,85 @@
+﻿@model CK.Models.JobApplication
+
+@{
+    ViewData["Title"] = "Chi tiết hồ sơ";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-info">
+                <div class="card-header bg-info text-white">
+                    <h3 class="mb-0 fw-bold">ℹ️ Chi tiết hồ sơ ứng viên</h3>
+                </div>
+                <div class="card-body">
+
+                    <dl class="row">
+                        <dt class="col-sm-4 text-muted">Vị trí ứng tuyển:</dt>
+                        <dd class="col-sm-8">
+                            <h5 class="fw-bold text-primary">@Model.Job?.Title</h5>
+                        </dd>
+
+                        <dt class="col-sm-4 text-muted">Tài khoản ứng viên:</dt>
+                        <dd class="col-sm-8">@Model.UserId</dd>
+
+                        <dt class="col-sm-4 text-muted">Ngày nộp hồ sơ:</dt>
+                        <dd class="col-sm-8">@Model.AppliedDate.ToString("dd/MM/yyyy HH:mm")</dd>
+
+                        <dt class="col-sm-4 text-muted">Trạng thái hiện tại:</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.Status == "Pending")
+                            {
+                                <span class="badge bg-warning text-dark fs-6">⏳ Đang chờ duyệt</span>
+                            }
+                            else if (Model.Status == "Approved")
+                            {
+                                <span class="badge bg-success fs-6">✅ Đã chấp nhận</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger fs-6">❌ Đã từ chối</span>
+                            }
+                        </dd>
+
+                        <dd class="col-12"><hr class="my-3" /></dd>
+
+                        <dt class="col-sm-4 text-muted">File CV đính kèm:</dt>
+                        <dd class="col-sm-8">
+                            @if (!string.IsNullOrEmpty(Model.CVPatch))
+                            {
+                                <a href="~/cvs/@Model.CVPatch" target="_blank" class="btn btn-outline-primary btn-sm fw-bold">
+                                    📥 Tải CV về xem
+                                </a>
+                            }
+                            else
+                            {
+                                <span class="text-secondary fst-italic">Không có file đính kèm</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4 text-muted">Thư giới thiệu:</dt>
+                        <dd class="col-sm-8">
+                            <div class="p-3 bg-light rounded border text-secondary">
+                                @if (!string.IsNullOrEmpty(Model.CoverLetter))
+                                {
+                                    @Model.CoverLetter
+                                }
+                                else
+                                {
+                                    <span>(Ứng viên không để lại lời nhắn)</span>
+                                }
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="card-footer bg-white d-flex justify-content-end gap-2">
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning fw-bold">
+                        ✏️ Xét duyệt hồ sơ này
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

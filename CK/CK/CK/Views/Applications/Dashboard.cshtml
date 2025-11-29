@@ -1,0 +1,59 @@
+﻿@model CK.Models.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Bảng điều khiển Admin";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 fw-bold text-primary">📊 Tổng quan hệ thống</h2>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            <div class="card text-white bg-primary shadow h-100">
+                <div class="card-header fw-bold">Tin tuyển dụng</div>
+                <div class="card-body text-center">
+                    <h1 class="display-4 fw-bold">@Model.JobCount</h1>
+                    <p class="card-text">Công việc đang hiển thị</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card text-white bg-success shadow h-100">
+                <div class="card-header fw-bold">Tổng hồ sơ</div>
+                <div class="card-body text-center">
+                    <h1 class="display-4 fw-bold">@Model.AppCount</h1>
+                    <p class="card-text">Lượt ứng tuyển</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card text-dark bg-warning shadow h-100">
+                <div class="card-header fw-bold">Cần duyệt gấp</div>
+                <div class="card-body text-center">
+                    <h1 class="display-4 fw-bold">@Model.PendingCount</h1>
+                    <p class="card-text">Hồ sơ đang chờ xử lý</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 text-center">
+                    <a asp-action="Index" class="btn btn-sm btn-light text-dark fw-bold">Vào duyệt ngay &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card text-white bg-info shadow h-100">
+                <div class="card-header fw-bold">Đã chấp nhận</div>
+                <div class="card-body text-center">
+                    <h1 class="display-4 fw-bold">@Model.ApprovedCount</h1>
+                    <p class="card-text">Ứng viên tiềm năng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Quay lại trang chủ</a>
+    </div>
+</div>

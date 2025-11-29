@@ -1,0 +1,79 @@
+﻿@model CK.Models.Job
+
+@{
+    ViewData["Title"] = "Chỉnh sửa tin tuyển dụng";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-warning">
+                <div class="card-header bg-warning text-dark">
+                    <h3 class="mb-0 fw-bold">✏️ Chỉnh sửa tin tuyển dụng</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Title" class="control-label fw-bold"></label>
+                            <input asp-for="Title" class="form-control" placeholder="Nhập tiêu đề công việc..." />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 form-group mb-3">
+                                <label asp-for="Salary" class="control-label fw-bold"></label>
+                                <input asp-for="Salary" class="form-control" type="number" />
+                                <span asp-validation-for="Salary" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 form-group mb-3">
+                                <label asp-for="Location" class="control-label fw-bold"></label>
+                                <input asp-for="Location" class="form-control" />
+                                <span asp-validation-for="Location" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Description" class="control-label fw-bold"></label>
+                            <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Requirements" class="control-label fw-bold"></label>
+                            <textarea asp-for="Requirements" class="form-control" rows="5"></textarea>
+                            <span asp-validation-for="Requirements" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="CreatedDate" class="control-label fw-bold text-muted"></label>
+                            <input asp-for="CreatedDate" class="form-control bg-light" readonly />
+                            <span asp-validation-for="CreatedDate" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group form-check mb-4 bg-light p-2 rounded border">
+                            <label class="form-check-label text-dark">
+                                <input class="form-check-input" asp-for="IsActive" />
+                                <strong>Hiển thị tin này (Active)</strong>
+                            </label>
+                        </div>
+
+                        <div class="form-group d-flex gap-2 justify-content-end">
+                            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                            <input type="submit" value="💾 Lưu thay đổi" class="btn btn-warning fw-bold px-4" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

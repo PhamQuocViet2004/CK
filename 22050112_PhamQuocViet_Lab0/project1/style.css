@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+.category-box {
+  width: 250px;
+  background: #f9f0f0;        /* nền hồng nhạt */
+  padding: 20px;
+  margin: 40px auto;
+  border-radius: 4px;
+}
+
+.category-box h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #4b2e2e;             /* nâu đậm */
+}
+
+.category-box ul {
+  list-style: none;           
+  padding-left: 0;
+}
+
+.category-box li {
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.category-box li::before {
+  content: "➜";               /* mũi tên */
+  color: #c44;                /* đỏ tươi */
+  position: absolute;
+  left: 0;
+}
+
+.category-box a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.category-box a:hover {
+  color: #c44;                /* đổi màu khi hover */
+}

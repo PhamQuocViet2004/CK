@@ -1,0 +1,264 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\views\\member2\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\views\\member2\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\views\\member\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\views\\member\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\views\\member\\createone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\views\\member\\createone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|c:\\users\\hp\\documents\\quytrinhphattrienphanmemhiendai\\22050112_phamquocviet_lab4\\lab4\\lab4\\views\\survey\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\views\\survey\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\views\\survey\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\views\\survey\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\controllers\\surveycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\controllers\\surveycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\models\\survey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\models\\survey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\views\\member2\\details2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\views\\member2\\details2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\controllers\\member2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\controllers\\member2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\models\\member2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\models\\member2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\views\\member\\createthree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\views\\member\\createthree.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\views\\member\\createtwo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\views\\member\\createtwo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\lab4\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{693A3CA3-8CE6-465C-B576-ABDD5BE0F73F}|Lab4\\Lab4.csproj|solutionrelative:lab4\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Survey\\Result.cshtml",
+              "RelativeDocumentMoniker": "Lab4\\Views\\Survey\\Result.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Survey\\Result.cshtml",
+              "RelativeToolTip": "Lab4\\Views\\Survey\\Result.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAACtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T09:15:34.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Survey.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Models\\Survey.cs",
+              "RelativeDocumentMoniker": "Lab4\\Models\\Survey.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Models\\Survey.cs",
+              "RelativeToolTip": "Lab4\\Models\\Survey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T09:12:45.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details2.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member2\\Details2.cshtml",
+              "RelativeDocumentMoniker": "Lab4\\Views\\Member2\\Details2.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member2\\Details2.cshtml",
+              "RelativeToolTip": "Lab4\\Views\\Member2\\Details2.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T08:35:41.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member2\\Register.cshtml",
+              "RelativeDocumentMoniker": "Lab4\\Views\\Member2\\Register.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member2\\Register.cshtml",
+              "RelativeToolTip": "Lab4\\Views\\Member2\\Register.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T08:32:44.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Member2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Controllers\\Member2Controller.cs",
+              "RelativeDocumentMoniker": "Lab4\\Controllers\\Member2Controller.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Controllers\\Member2Controller.cs",
+              "RelativeToolTip": "Lab4\\Controllers\\Member2Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T08:31:29.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Member2.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Models\\Member2.cs",
+              "RelativeDocumentMoniker": "Lab4\\Models\\Member2.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Models\\Member2.cs",
+              "RelativeToolTip": "Lab4\\Models\\Member2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T08:27:09.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateOne.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member\\CreateOne.cshtml",
+              "RelativeDocumentMoniker": "Lab4\\Views\\Member\\CreateOne.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member\\CreateOne.cshtml",
+              "RelativeToolTip": "Lab4\\Views\\Member\\CreateOne.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T08:01:39.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member\\Details.cshtml",
+              "RelativeDocumentMoniker": "Lab4\\Views\\Member\\Details.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member\\Details.cshtml",
+              "RelativeToolTip": "Lab4\\Views\\Member\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T08:00:58.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SurveyController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Controllers\\SurveyController.cs",
+              "RelativeDocumentMoniker": "Lab4\\Controllers\\SurveyController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Controllers\\SurveyController.cs",
+              "RelativeToolTip": "Lab4\\Controllers\\SurveyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T09:13:52.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Survey\\Index.cshtml",
+              "RelativeDocumentMoniker": "Lab4\\Views\\Survey\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Survey\\Index.cshtml",
+              "RelativeToolTip": "Lab4\\Views\\Survey\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T09:14:14.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateThree.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member\\CreateThree.cshtml",
+              "RelativeDocumentMoniker": "Lab4\\Views\\Member\\CreateThree.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member\\CreateThree.cshtml",
+              "RelativeToolTip": "Lab4\\Views\\Member\\CreateThree.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T08:02:33.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateTwo.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member\\CreateTwo.cshtml",
+              "RelativeDocumentMoniker": "Lab4\\Views\\Member\\CreateTwo.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Member\\CreateTwo.cshtml",
+              "RelativeToolTip": "Lab4\\Views\\Member\\CreateTwo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T08:02:02.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MemberController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Controllers\\MemberController.cs",
+              "RelativeDocumentMoniker": "Lab4\\Controllers\\MemberController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Controllers\\MemberController.cs",
+              "RelativeToolTip": "Lab4\\Controllers\\MemberController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T07:42:43.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Lab4\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Lab4\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwCwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T07:41:01.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Models\\Member.cs",
+              "RelativeDocumentMoniker": "Lab4\\Models\\Member.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\QuyTrinhPhatTrienPhanMemHienDai\\22050112_PhamQuocViet_Lab4\\Lab4\\Lab4\\Models\\Member.cs",
+              "RelativeToolTip": "Lab4\\Models\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T07:38:36.993Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

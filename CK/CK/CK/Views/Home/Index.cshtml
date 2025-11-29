@@ -1,0 +1,93 @@
+﻿@model IEnumerable<CK.Models.Job>
+
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<div class="bg-primary text-white p-5 rounded-3 mb-4 text-center">
+    <h1 class="display-4 fw-bold">Tìm Việc Làm Mơ Ước</h1>
+    <p class="lead">Hàng ngàn cơ hội nghề nghiệp đang chờ đón bạn.</p>
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+            <form asp-controller="Jobs" asp-action="Index" method="get" class="d-flex bg-white p-2 rounded">
+                <input type="text" name="searchString" class="form-control border-0 me-2" placeholder="Nhập tên công việc, vị trí..." />
+                <button type="submit" class="btn btn-warning fw-bold px-4">TÌM KIẾM</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="row text-center mb-5">
+    <div class="col-md-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h3 class="text-primary">@Model.Count()</h3>
+                <p class="text-muted">Việc làm mới hôm nay</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h3 class="text-success">500+</h3>
+                <p class="text-muted">Doanh nghiệp hàng đầu</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h3 class="text-warning">1000+</h3>
+                <p class="text-muted">Ứng viên tài năng</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="fw-bold text-dark">Việc làm nổi bật</h2>
+    <a asp-controller="Jobs" asp-action="Index" class="btn btn-outline-primary">Xem tất cả &rarr;</a>
+</div>
+
+<div class="row">
+    @if (!Model.Any())
+    {
+        <div class="col-12 text-center text-muted">
+            <p>Chưa có tin tuyển dụng nào được đăng.</p>
+        </div>
+    }
+    else
+    {
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm hover-shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary text-truncate">
+                            <a asp-controller="Jobs" asp-action="Details" asp-route-id="@item.Id" class="text-decoration-none">
+                                @item.Title
+                            </a>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">📍 @item.Location</h6>
+                        <p class="card-text text-success fw-bold">💰 @item.Salary.ToString("N0") VND</p>
+                        <p class="card-text small text-secondary">
+                            📅 @item.CreatedDate.ToString("dd/MM/yyyy")
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white border-top-0">
+                        <a asp-controller="Jobs" asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary w-100">Ứng tuyển ngay</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+<style>
+    .hover-shadow:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    }
+</style>

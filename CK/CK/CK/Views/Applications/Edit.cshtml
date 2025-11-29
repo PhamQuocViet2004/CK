@@ -1,0 +1,84 @@
+﻿@model CK.Models.JobApplication
+
+@{
+    ViewData["Title"] = "Duyệt hồ sơ ứng viên";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow border-primary">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0 fw-bold">📋 Duyệt hồ sơ ứng viên</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="JobId" />
+                        <input type="hidden" asp-for="UserId" />
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold text-muted">Vị trí ứng tuyển:</label>
+                            <select asp-for="JobId" class="form-control bg-light" asp-items="ViewBag.JobId" disabled></select>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold text-muted">ID Ứng viên:</label>
+                            <input asp-for="UserId" class="form-control bg-light" readonly />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold text-muted">Ngày nộp hồ sơ:</label>
+                            <input asp-for="AppliedDate" class="form-control bg-light" readonly />
+                        </div>
+
+                        <hr />
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold">File CV đính kèm:</label>
+                            <div class="input-group">
+                                <input asp-for="CVPatch" class="form-control bg-light" readonly />
+                                @if (!string.IsNullOrEmpty(Model.CVPatch))
+                                {
+                                    <a href="~/cvs/@Model.CVPatch" target="_blank" class="btn btn-outline-primary">
+                                        📥 Tải về xem
+                                    </a>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="control-label fw-bold">Thư giới thiệu:</label>
+                            <textarea asp-for="CoverLetter" class="form-control bg-light" rows="4" readonly></textarea>
+                        </div>
+
+                        <hr />
+
+                        <div class="form-group mb-4 bg-warning p-3 rounded bg-opacity-10 border border-warning">
+                            <label asp-for="Status" class="control-label fw-bold text-dark fs-5">⚡ Trạng thái hồ sơ:</label>
+                            <select asp-for="Status" class="form-select form-select-lg mt-2 border-warning text-dark fw-bold">
+                                <option value="Pending">⏳ Pending (Chờ xử lý)</option>
+                                <option value="Approved">✅ Approved (Chấp nhận hồ sơ)</option>
+                                <option value="Rejected">❌ Rejected (Từ chối hồ sơ)</option>
+                            </select>
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group d-flex justify-content-end gap-2">
+                            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+                            <input type="submit" value="💾 Cập nhật trạng thái" class="btn btn-primary fw-bold px-4" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
